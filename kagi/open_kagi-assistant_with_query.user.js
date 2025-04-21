@@ -12,7 +12,13 @@
 
     const currentUrl = window.location.href;
     const summarizerUrl = `https://kagi.com/summarizer/index.html?target_language=JA&summary=takeaway&url=${encodeURIComponent(currentUrl)}`;
-    const query = `下記のURLのページを確認し、小見出しと箇条書きを活用してキーセンテンスを作成ください。この後内容についてディスカッションしましょう。\n${currentUrl}`;
+    const query = `下記のURLのページを確認し、小見出しと箇条書きを活用してキーセンテンスを作成ください。
+この後内容についてディスカッションしましょう。
+${currentUrl}
+
+## 注意事項
+WEBページにアクセス出来ない場合もあります。
+その場合は「WEBページにアクセス出来ませんでした」と返答する決まりとなっています`;
     const assistantUrl = `https://kagi.com/assistant?q=${encodeURIComponent(query)}&internet=true`;
     document.addEventListener('keydown', function(event) {
         // Alt + Shift + Z が押されたかチェック
