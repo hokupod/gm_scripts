@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name         Open Gemini with Query
-// @version      2025-04-06
+// @version      2025-04-21
 // @description  Gemini に query パラメータで現在いるページの URL を引き渡す
 // @author       Hokuto TAKEMIYA
 // @match        *://*/*
